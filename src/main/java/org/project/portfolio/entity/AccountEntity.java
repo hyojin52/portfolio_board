@@ -3,10 +3,12 @@ package org.project.portfolio.entity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "account")
+@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,11 +21,15 @@ public class AccountEntity extends AuditingEntity {
   @Column(length = 50, nullable = false)
   private String email;
   
-  @Column(length = 50, nullable = false)
+  @Column(length = 255, nullable = false)
   private String password;
   
   @Column(length = 50, nullable = false)
   private String mobileNumber;
+  
+  @Column(length = 10, nullable = false)
+  @Enumerated(EnumType.STRING)
+  private AccountRole role = AccountRole.USER;
   
   @Column(length = 20, nullable = false)
   private String name;
