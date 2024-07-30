@@ -16,7 +16,8 @@ public enum ErrorCode {
   USER_NOT_FOUND(HttpStatus.NOT_FOUND, "1005", "User not found"),
   INVALID_TITLE(HttpStatus.BAD_REQUEST, "1006", "Title is invalid"),
   INVALID_CONTENT(HttpStatus.BAD_REQUEST, "1006", "Content is invalid"),
-  
+  POST_NOT_FOUND(HttpStatus.BAD_REQUEST, "1007", "Post not found"),
+  INVALID_POST_UPDATE(HttpStatus.BAD_REQUEST, "1008", "Post Update is invalid"),
   INVALID_TOKEN(HttpStatus.UNAUTHORIZED, "2000", "Token is invalid"),
   // 5xx -5000
   INTERNAL_SERVER_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "5000", "Internal server error"),
