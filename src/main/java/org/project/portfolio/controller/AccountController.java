@@ -2,6 +2,7 @@ package org.project.portfolio.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.project.portfolio.controller.request.AccountJoinRequest;
+import org.project.portfolio.controller.request.AccountLoginRequest;
 import org.project.portfolio.controller.response.Result;
 import org.project.portfolio.service.AccountService;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,5 +21,11 @@ public class AccountController {
   public Result<Void> join(@RequestBody AccountJoinRequest request) {
     accountService.join(request);
     return Result.OK();
+  }
+  
+  @PostMapping("/login")
+  public Result<String> login(@RequestBody AccountLoginRequest request) {
+    String token = accountService.login(request);
+    return Result.OK(token);
   }
 }

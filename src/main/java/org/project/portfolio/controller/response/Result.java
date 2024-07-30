@@ -33,4 +33,18 @@ public class Result<T> {
             .resultData(null)
             .build();
   }
+  
+  public String toStream() {
+    if(resultData == null) {
+      return "{ \n" +
+              "  \"resultCode\":" + "\"" + resultCode + "\", \n" +
+              "  \"result\":" + null +
+              "\n }";
+    }
+    
+    return "{ \n" +
+            "  \"resultCode\":" + "\"" + resultCode + "\", \n" +
+            "  \"result\":" + "\"" + resultData + "\"" +
+            "\n }";
+  }
 }
