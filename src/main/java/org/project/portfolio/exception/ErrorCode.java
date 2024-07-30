@@ -14,6 +14,8 @@ public enum ErrorCode {
   INVALID_PASSWORD(HttpStatus.BAD_REQUEST, "1003" , "Password is invalid"),
   DUPLICATE_EMAIL(HttpStatus.BAD_REQUEST, "1004", "Email is duplicate"),
   USER_NOT_FOUND(HttpStatus.NOT_FOUND, "1005", "User not found"),
+  INVALID_TITLE(HttpStatus.BAD_REQUEST, "1006", "Title is invalid"),
+  INVALID_CONTENT(HttpStatus.BAD_REQUEST, "1006", "Content is invalid"),
   
   INVALID_TOKEN(HttpStatus.UNAUTHORIZED, "2000", "Token is invalid"),
   // 5xx -5000
