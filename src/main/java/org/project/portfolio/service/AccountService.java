@@ -5,7 +5,7 @@ import org.project.portfolio.controller.Account;
 import org.project.portfolio.controller.request.AccountJoinRequest;
 import org.project.portfolio.controller.request.AccountLoginRequest;
 import org.project.portfolio.entity.AccountEntity;
-import org.project.portfolio.entity.AccountRole;
+import org.project.portfolio.entity.enums.AccountRole;
 import org.project.portfolio.exception.ErrorCode;
 import org.project.portfolio.exception.PortfolioApplicationException;
 import org.project.portfolio.repository.AccountRepository;

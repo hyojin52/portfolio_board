@@ -1,14 +1,11 @@
 package org.project.portfolio.controller;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.project.portfolio.entity.AccountEntity;
-import org.project.portfolio.entity.AccountRole;
+import org.project.portfolio.entity.enums.AccountRole;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

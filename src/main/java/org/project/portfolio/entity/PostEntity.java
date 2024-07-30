@@ -3,11 +3,13 @@ package org.project.portfolio.entity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "post")
 @Builder
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class PostEntity extends AuditingEntity {

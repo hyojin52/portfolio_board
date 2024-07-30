@@ -1,4 +1,4 @@
-package org.project.portfolio.entity;
+package org.project.portfolio.entity.enums;
 
 public enum AccountRole {
   ADMIN,
